@@ -11,13 +11,8 @@
     <title>Title</title>
 </head>
 <body>
-
-    <a href="test">test</a>
-
     <h1>
         ${message}
     </h1>
-
-
 </body>
 </html>
