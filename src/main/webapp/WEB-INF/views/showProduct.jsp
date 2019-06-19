@@ -11,10 +11,8 @@
     <title>显示商品信息</title>
 </head>
 <body>
-
 产品名称： ${product.name}
 <br>
 产品价格： ${product.price}
-
 </body>
 </html>
