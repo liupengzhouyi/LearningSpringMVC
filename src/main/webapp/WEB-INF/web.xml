@@ -8,6 +8,16 @@
 
   <display-name>Archetype Created Web Application</display-name>
 
+  <!--为什么要加这一段呢？ 因为配置springmvc的servlet的时候，
+  使用的路径是"/"，导致静态资源在默认情况下不能访问，
+  所以要加上这一段，允许访问jpg。
+  并且必须加在springmvc的servlet之前-->
+  <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.jpg</url-pattern>
+  </servlet-mapping>
+
+
   <!--配置前端控制器-->
   <servlet>
     <servlet-name>dispatcherServlet</servlet-name>

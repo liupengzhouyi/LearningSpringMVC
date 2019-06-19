@@ -2,20 +2,16 @@
   Created by IntelliJ IDEA.
   User: liupeng
   Date: 2019-06-20
-  Time: 00:01
+  Time: 00:54
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Session中的数据</title>
+    <title>Title</title>
 </head>
 <body>
-<h1>
-    Session 中的数据 ： ${count}
-</h1>
-<h2>
-    <a href="session/check">刷新</a>
-</h2>
+<img src="/image/vvErC1LA2P.jpg"/>
+<img src="/image/${imageName}"/>
 </body>
 </html>

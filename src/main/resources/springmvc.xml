@@ -19,6 +19,10 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <!--开放对上传功能的支持-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
+
+
     <bean id="simpleUrlHandlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
         <property name="mappings">
             <props>
@@ -32,5 +36,9 @@
 
     <!-- 开启 Spring 框架注解的支持 -->
     <mvc:annotation-driven />
+
+    <!--加载静态文件-->
+    <mvc:default-servlet-handler />
+
 
 </beans>
