@@ -12,14 +12,12 @@
     <!-- 开启注解扫描，使Spring支持自动检测组件，如注解的Controller-->
     <context:component-scan base-package="cn.liupeng.controller"/>
 
-
     <!-- 配置视图解析器 -->
     <bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!--把视图约束在/WEB-INF/views/*.jsp-->
         <property name="prefix" value="/WEB-INF/views/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-
 
     <bean id="simpleUrlHandlerMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
         <property name="mappings">
@@ -30,7 +28,6 @@
             </props>
         </property>
     </bean>
-
     <bean id="indexController" class="cn.liupeng.controller.IndexController" />
 
     <!-- 开启 Spring 框架注解的支持 -->
